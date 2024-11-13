@@ -36,7 +36,7 @@ class BurgerCreate(BaseModel):
 
 class BurgerUpdate(BaseModel):
     """Fields to update a burger"""
-
+    print("burger update")
     name: str = Field(
         None,
         description="The name of the burger",
