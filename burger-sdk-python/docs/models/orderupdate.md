@@ -1,0 +1,13 @@
+# OrderUpdate
+
+Fields to update an order
+
+
+## Fields
+
+| Field                                                                          | Type                                                                           | Required                                                                       | Description                                                                    | Example                                                                        |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| `burger_ids`                                                                   | List[*int*]                                                                    | :heavy_minus_sign:                                                             | List of burger ids in the order                                                | [<br/>1,<br/>2<br/>]                                                           |
+| `note`                                                                         | *Optional[str]*                                                                | :heavy_minus_sign:                                                             | Note for the order                                                             | No onions                                                                      |
+| `status`                                                                       | [Optional[models.OrderUpdateOrderStatus]](../models/orderupdateorderstatus.md) | :heavy_minus_sign:                                                             | Status of the order                                                            | CREATED                                                                        |
+| `table`                                                                        | *Optional[int]*                                                                | :heavy_minus_sign:                                                             | Table number for the order                                                     | 1                                                                              |

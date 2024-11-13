@@ -1,0 +1,24 @@
+speakeasyVersion: 1.438.3
+sources: {}
+targets:
+    burger-sdk:
+        source: -OAS
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        -OAS:
+            inputs:
+                - location: ../openapi.yaml
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/shirly/shirly/-oas
+    targets:
+        burger-sdk:
+            target: python
+            source: -OAS
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/shirly/shirly/-oas-code-samples
+                blocking: false
